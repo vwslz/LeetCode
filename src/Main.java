@@ -3,9 +3,9 @@ import java.util.Arrays;
 public class Main {
 
     public static void main(String[] args) {
-        LongestSubstringWithoutRepearingCharacters_3 sol = new LongestSubstringWithoutRepearingCharacters_3();
+        LongestPalindromicSubstring_5 sol = new LongestPalindromicSubstring_5();
 //        int[] testcase = new int[] {2,7,11,51};
-        String testcase = "cdd";
-        System.out.println("" + sol.lengthOfLongestSubstring(testcase));
+        String testcase = "jahkjfhahf";
+        System.out.println("" + sol.longestPalindrome(testcase));
     }
 }
