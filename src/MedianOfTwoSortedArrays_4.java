@@ -1,5 +1,6 @@
+// O(log n)
+
 public class MedianOfTwoSortedArrays_4 {
-    // O(log n)
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
         int leftMedian = (nums1.length+nums2.length+1)/2;
         int rightMedian = (nums1.length+nums2.length+2)/2;

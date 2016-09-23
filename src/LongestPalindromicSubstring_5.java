@@ -1,5 +1,6 @@
+// O(n), Manacher's algorithm with inspriation from https://discuss.leetcode.com/topic/58568/java-o-n-solution
+
 public class LongestPalindromicSubstring_5 {
-    // O(n), Manacher's algorithm with inspriation from https://discuss.leetcode.com/topic/58568/java-o-n-solution
     public String longestPalindrome(String s) {
         if (s == null)  return "";
         char[] chars_s = addBoundary(s.toCharArray());

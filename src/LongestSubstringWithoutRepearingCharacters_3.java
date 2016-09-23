@@ -1,9 +1,9 @@
 import java.util.Arrays;
-import java.util.HashMap;
+
+// O(n)
 
 public class LongestSubstringWithoutRepearingCharacters_3 {
     public int lengthOfLongestSubstring(String s) {
-        // O(n)
         int[] i_chars = new int[256];
         Arrays.fill(i_chars, -1);
         char[] char_s = s.toCharArray();

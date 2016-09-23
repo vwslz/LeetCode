@@ -1,8 +1,8 @@
 import java.util.Hashtable;
 
-public class TwoSum_1 {
+// O(n)
 
-    // O(n)
+public class TwoSum_1 {
     public int[] twoSum(int[] nums, int target) {
         Hashtable<Integer, Integer> ht = new Hashtable<Integer, Integer>(nums.length);
         for (int i = 0; i < nums.length; i++) {

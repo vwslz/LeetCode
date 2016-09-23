@@ -1,5 +1,6 @@
+// O(n)
+
 public class AddTwoNumbers_2 {
-    // O(n)
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         int carry =0;
         ListNode res = new ListNode(0);
