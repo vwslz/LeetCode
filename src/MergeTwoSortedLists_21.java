@@ -18,6 +18,6 @@ public class MergeTwoSortedLists_21 {
             iterNewHead.next = l1;
         if (l2 != null)
             iterNewHead.next = l2;
-        return newHead.next;;
+        return newHead.next;
     }
 }
