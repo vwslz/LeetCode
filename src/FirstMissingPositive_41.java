@@ -1,15 +1,25 @@
 // O(n)
 public class FirstMissingPositive_41 {
     public int firstMissingPositive(int[] nums) {
-        int min = Integer.MAX_VALUE;
-        for (int i = 0; i < nums.length; i++) {
-            if (nums[i] < min)
-                min = nums[i];
+        for (int i = 0; i < nums.length; i++) {;
+            if (nums[i] < 1 || nums[i] > nums.length)    nums[i] = -1;
+            else {
+                int iter = nums[i];
+                nums[i] = -1;
+                while (iter > 0 && iter <= nums.length) {
+                    int temp = nums[iter - 1];
+                    nums[iter - 1] = iter;
+                    if (iter == temp)
+                        break;
+                    else
+                        iter = temp;
+                }
+            }
         }
-        if (min > 1)
-            return 1;
-        else {
-
+        for (int j = 0; j < nums.length; j++) {
+            if (nums[j] == -1)
+                return j+1;
         }
+        return nums.length + 1;
     }
 }
