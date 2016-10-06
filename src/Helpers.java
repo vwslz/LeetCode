@@ -16,6 +16,12 @@ public class Helpers {
         System.out.println(Arrays.toString(arr));
     }
 
+    public void printArrayOfIntegerArray(int[][] arr) {
+        for (int i = 0; i < arr.length; i++) {
+                System.out.print(Arrays.toString(arr[i]));
+        }
+    }
+
     public void printArrayOfCharArray(char[][] arr) {
         for (int i = 0; i < arr.length; i++)
             System.out.println(String.valueOf(arr[i]));
