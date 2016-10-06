@@ -3,9 +3,13 @@ import java.util.Arrays;
 public class Main {
 
     public static void main(String[] args) {
-        Permutations_46 sol = new Permutations_46();
+        N_Queens_51 sol = new N_Queens_51();
+
+        // Helper class
+        Helpers h = new Helpers();
         // int arr
 //        int[] testcase = new int[] {2,7,11,51};
+
         // nodes
 //        ListNode head = new ListNode(1);
 //        ListNode iter = head;
@@ -15,14 +19,13 @@ public class Main {
 //            iter = iter.next;
 //        }
 //        iter = null;
+
         // String
 //        String testcase = "jahkjfhahf";;
-        // Helper class
-        Helpers h = new Helpers();
-        int[] test = new int[]{1,2,3};
 
-//        h.printListOfIntegerList(sol.combinationSum2(cans, 8));
-        h.printListOfIntegerList(sol.permute(test));
+        // String array
+//        String[] test = new String[]{"eat", "tan", "tea", "ate", "nat", "bat"};
+        h.printListOfStringList(sol.solveNQueens(9));
     }
 
 }

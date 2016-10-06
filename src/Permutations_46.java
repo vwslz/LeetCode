@@ -8,21 +8,27 @@ public class Permutations_46 {
         List list = new ArrayList();
         if (nums.length == 0)
             return list;
-        permute_helper(nums, list, 0);
+        ArrayList<Integer> new_list = new ArrayList<Integer>();
+        boolean[] used = new boolean[nums.length];
+        Arrays.fill(used, false);
+        permute_helper(nums, list, new_list, used, 0);
         return list;
     }
 
-    public void permute_helper(int[] nums, List list, int index) {
-        for (int i = index; i < nums.length - 1; i++) {
-            permute_helper(nums, list, i);
+    public void permute_helper(int[] nums, List list, ArrayList<Integer> new_list, boolean[] used, int index) {
+        if (index >= nums.length) {
+            list.add(new_list.clone());
         }
-        swap(nums, index, nums[nums.length - 1]);
-        list.add(Arrays.asList(nums));
-    }
-
-    public void swap(int[] nums, int i, int j) {
-        int temp = nums[i];
-        nums[i] = nums[j];
-        nums[j] = temp;
+        else {
+            for (int i = 0; i < nums.length; i++) {
+                if (!used[i]) {
+                    new_list.add(nums[i]);
+                    used[i] = true;
+                    permute_helper(nums, list, new_list, used, index + 1);
+                    new_list.remove(index);
+                    used[i] = false;
+                }
+            }
+        }
     }
 }
