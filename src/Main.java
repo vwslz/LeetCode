@@ -3,7 +3,7 @@ import java.util.Arrays;
 public class Main {
 
     public static void main(String[] args) {
-        PermutationSequence_60 sol = new PermutationSequence_60();
+        Sqrt_x_69 sol = new Sqrt_x_69();
 
         // Helper class
         Helpers h = new Helpers();
@@ -24,11 +24,10 @@ public class Main {
 //        String testcase = "jahkjfhahf";;
 
         // String array
-//        String[] test = new String[]{"eat", "tan", "tea", "ate", "nat", "bat"};
+//        String[] test = new String[]{"What", "must", "be", "shall", "be."};
 
-        System.out.print(sol.getPermutation(3, 5));
+        System.out.println(sol.mySqrt(3));
     }
-
 }
 
 
