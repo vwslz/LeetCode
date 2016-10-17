@@ -29,7 +29,9 @@ public class Helpers {
 
     public void printIntegerList(List<Integer> list) {
         String res = "";
-        for (Integer i: list)   res += i + " ";
+        for (int i = 0; i < list.size(); i++) {
+            res += list.get(i) + " ";
+        }
         System.out.println(res);
     }
 
