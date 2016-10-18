@@ -3,12 +3,12 @@ import java.util.Arrays;
 public class Main {
 
     public static void main(String[] args) {
-        Combinations_77 sol= new Combinations_77();
+        RemoveDuplicatesFromSortedArrayII sol= new RemoveDuplicatesFromSortedArrayII();
 
         // Helper class
         Helpers h = new Helpers();
         // int arr
-//        int[] testcase = new int[] {2,7,11,51};
+        int[] test = new int[] {1,1,1,2,2,3};
         // int arr arr
 //        int[][] test = new int[4][3];
 //        test[0][0] = 0;
@@ -40,8 +40,8 @@ public class Main {
 //        String[] test = new String[]{"What", "must", "be", "shall", "be."};
 
 //        sol.setZeroes(test);
-
-        h.printListOfIntegerList(sol.combine(4, 2));
+        System.out.println(sol.removeDuplicates(test));
+        h.printIntegerArray(test);
 
 //        System.out.println(sol.minWindow("a", "a"));
     }
