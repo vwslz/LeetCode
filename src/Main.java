@@ -3,7 +3,7 @@ import java.util.Arrays;
 public class Main {
 
     public static void main(String[] args) {
-        RemoveDuplicatesFromSortedArrayII sol= new RemoveDuplicatesFromSortedArrayII();
+        RemoveDuplicatesFromSortedArrayII_80 sol= new RemoveDuplicatesFromSortedArrayII_80();
 
         // Helper class
         Helpers h = new Helpers();
