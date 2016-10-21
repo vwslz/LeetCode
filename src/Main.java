@@ -3,12 +3,12 @@ import java.util.Arrays;
 public class Main {
 
     public static void main(String[] args) {
-        RemoveDuplicatesFromSortedArrayII_80 sol= new RemoveDuplicatesFromSortedArrayII_80();
+        LargestRectangleInHistogram_84 sol= new LargestRectangleInHistogram_84();
 
         // Helper class
         Helpers h = new Helpers();
         // int arr
-        int[] test = new int[] {1,1,1,2,2,3};
+        int[] test = new int[] {2,1,2};
         // int arr arr
 //        int[][] test = new int[4][3];
 //        test[0][0] = 0;
@@ -39,11 +39,15 @@ public class Main {
         // String array
 //        String[] test = new String[]{"What", "must", "be", "shall", "be."};
 
-//        sol.setZeroes(test);
-        System.out.println(sol.removeDuplicates(test));
-        h.printIntegerArray(test);
+        // list node
+//        ListNode head = new ListNode(1);
+//        head.next = new ListNode(2);
+//        head.next.next = new ListNode(2);
 
-//        System.out.println(sol.minWindow("a", "a"));
+//        sol.setZeroes(test);
+//        h.printIntegerArray();
+
+        System.out.println(sol.largestRectangleArea(test));
     }
 }
 

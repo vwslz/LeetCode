@@ -49,4 +49,11 @@ public class Helpers {
             System.out.print(list.get(i).get(list.get(i).size() - 1) + "\n");
         }
     }
+
+    public void printLinkListNode(ListNode head) {
+        while (head != null) {
+            System.out.println(head.val + " ");
+            head = head.next;
+        }
+    }
 }
