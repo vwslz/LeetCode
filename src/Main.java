@@ -3,12 +3,12 @@ import java.util.Arrays;
 public class Main {
 
     public static void main(String[] args) {
-        LargestRectangleInHistogram_84 sol= new LargestRectangleInHistogram_84();
+        ScrambleString_87 sol= new ScrambleString_87();
 
         // Helper class
         Helpers h = new Helpers();
         // int arr
-        int[] test = new int[] {2,1,2};
+//        int[] test = new int[] {2,1,2};
         // int arr arr
 //        int[][] test = new int[4][3];
 //        test[0][0] = 0;
@@ -47,7 +47,7 @@ public class Main {
 //        sol.setZeroes(test);
 //        h.printIntegerArray();
 
-        System.out.println(sol.largestRectangleArea(test));
+        System.out.println(sol.isScramble("abcd", "bdac"));
     }
 }
 
