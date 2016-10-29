@@ -5,10 +5,7 @@ public class DecodeWays_91 {
         char[] c = s.toCharArray();
         int[] res = new int[c.length + 1];
         res[0] = 1;
-        if (s.charAt(0) == '0')
-            return 0;
-        else
-            res[1] = 1;
+        res[1] = (s.charAt(0) == '0') ? 0 : 1;
         for (int i = 0; i < c.length; i++) {
             if (s.charAt(i) == '0') {
                 if (i > 0 && (s.charAt(i - 1) == '1' || s.charAt(i - 1) == '2'))
