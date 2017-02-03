@@ -46,7 +46,7 @@ public class Main {
 
 //        sol.setZeroes(test);
 //        h.printIntegerArray();
-        sol.isInterleave("aabcc","dbbca", "aadbbcbcac");
+        sol.isInterleave("db","b", "cbb");
 //        h.printStringList(sol.restoreIpAddresses("010010"));
 
 //        System.out.println(sol.isScramble("abcd", "bdac"));
