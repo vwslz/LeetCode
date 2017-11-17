@@ -1,6 +1,5 @@
 import java.util.Arrays;
 
-//
 public class ScrambleString_87 {
     public boolean isScramble(String s1, String s2) {
         char[] c1 = s1.toCharArray(), c2 = s2.toCharArray();
