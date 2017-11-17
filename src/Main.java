@@ -3,7 +3,7 @@ import java.util.Arrays;
 public class Main {
 
     public static void main(String[] args) {
-        ScrambleString_87 sol= new ScrambleString_87();
+        InterleavingString_97 sol = new InterleavingString_97();
 
         // Helper class
         Helpers h = new Helpers();
@@ -46,8 +46,10 @@ public class Main {
 
 //        sol.setZeroes(test);
 //        h.printIntegerArray();
+        sol.isInterleave("db","b", "cbb");
+//        h.printStringList(sol.restoreIpAddresses("010010"));
 
-        System.out.println(sol.isScramble("abcd", "bdac"));
+//        System.out.println(sol.isScramble("abcd", "bdac"));
     }
 }
 

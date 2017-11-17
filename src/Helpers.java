@@ -35,6 +35,14 @@ public class Helpers {
         System.out.println(res);
     }
 
+    public void printStringList(List<String> list) {
+        String res = "";
+        for (int i = 0; i < list.size(); i++) {
+            res += list.get(i) + "\n";
+        }
+        System.out.println(res);
+    }
+
     public void printListOfIntegerList(List<List<Integer>> list) {
         for (int i = 0; i < list.size(); i++) {
             System.out.println(String.valueOf(list.get(i)));
