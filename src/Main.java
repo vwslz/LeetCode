@@ -1,12 +1,9 @@
-import java.util.Arrays;
-
 public class Main {
-
     public static void main(String[] args) {
-        InterleavingString_97 sol = new InterleavingString_97();
+        MaximumProductSubarray_152 sol = new MaximumProductSubarray_152();
 
         // Helper class
-        Helpers h = new Helpers();
+        //Helpers h = new Helpers();
         // int arr
 //        int[] test = new int[] {2,1,2};
         // int arr arr
@@ -46,11 +43,9 @@ public class Main {
 
 //        sol.setZeroes(test);
 //        h.printIntegerArray();
-        sol.isInterleave("db","b", "cbb");
+        sol.maxProduct(new int[]{2, 3, -5, 0});
 //        h.printStringList(sol.restoreIpAddresses("010010"));
 
 //        System.out.println(sol.isScramble("abcd", "bdac"));
     }
 }
-
-
