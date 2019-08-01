@@ -27,6 +27,15 @@ public class Helpers {
             System.out.println(String.valueOf(arr[i]));
     }
 
+    public void printListOfIntegerArray(List<int[]> list) {
+        String res = "[";
+        for (int i = 0; i < list.size(); i++) {
+            res += Arrays.toString(list.get(i)) + " ";
+        }
+        res += "]";
+        System.out.println(res);
+    }
+
     public void printIntegerList(List<Integer> list) {
         String res = "";
         for (int i = 0; i < list.size(); i++) {
