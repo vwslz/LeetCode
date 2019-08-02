@@ -3,10 +3,11 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
 
-        BasicCalculator_224 test = new BasicCalculator_224();
-        System.out.println(test.calculate("1 + 1"));
-        System.out.println(test.calculate("(1+(4+5+2)-3)+(6+8)"));
-        System.out.println(test.calculate("2-(5-6) + (4 - 6)"));
+        ImplementQueueUsingStacks_232 test = new ImplementQueueUsingStacks_232();
 
+        test.push(1);
+        test.push(2);
+        test.push(3);
+        test.peek();
     }
 }
