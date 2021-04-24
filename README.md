@@ -5,9 +5,17 @@ My leetcode practices with complexity in comment.
 ---
 # Notes
 
+- [Manacher's Algorithm](#manachers-algorithm)
+- [Kahn's Algorithm](#kahns-algorithm)
+- [Knuth–Morris–Pratt Algorithm](#knuthmorrispratt-algorithm)
+- [Newton's Method](#newtons-method)
+- [Matrix multiplication with Cannon's Algorithm](#matrix-multiplication-with-cannons-algorithm)
+- [Boyer–Moore's algorithms](#boyermoores-algorithms)
+- [Binary Indexed Tree](#binary-indexed-tree)
+
 ## Manacher's Algorithm
 
-inspiration from: https://discuss.leetcode.com/topic/58568/java-o-n-solution
+Inspiration from: https://discuss.leetcode.com/topic/58568/java-o-n-solution
 
 My implementation: 
 
