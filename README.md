@@ -328,3 +328,21 @@ Note：Wiki mentioned that if there is no majority, it might give wrong output.
 > However, if there is no majority, the algorithm will not detect that fact, and will still output one of the elements. A version of the algorithm that makes a second pass through the data can be used to verify that the element found in the first pass really is a majority.
 
 This is the reason why there is a varification part.
+
+## Binary Indexed Tree
+
+Inspired by [davidtan1890](https://leetcode.com/problems/count-of-smaller-numbers-after-self/discuss/76718/7ms-Java-solution-using-Binary-Indexed-Tree). 
+
+BIT implementation from [TopCoder](https://www.topcoder.com/thrive/articles/Binary%20Indexed%20Trees): [readCumulativeFrequency](https://www.topcoder.com/thrive/articles/Binary%20Indexed%20Trees#read) and [updateCumulativeFrequency](https://www.topcoder.com/thrive/articles/Binary%20Indexed%20Trees#add)
+
+Top node is 0. For each node in **tree** at *idx*, it saves the cumulated frequcy for a certain range (**?** , idx) in **input array**.
+
+Let *idx* = *0/1* * 2 ^ 0 + *0/1* * 2 ^ 1 + ... + *0/1* * 2 ^ *floor(log(idx))*. The range begins at the index that differs from the last non-zero coefficient.
+
+For example:
+- idx = 4 -> 1000. Flip the rightmost non-zero digit -> 0000. Hence, node 4 in tree saves (0, 4-1)=(0, 3) in input array.
+- idx = 7 -> 1110. Flip the rightmost non-zero digit -> 1100. Hence, node 7 in tree saves (6, 7-1)=(6, 6) in input array.
+
+An example of tree from [TopCoder](https://www.topcoder.com/thrive/articles/Binary%20Indexed%20Trees).
+
+[!BIT.png](img/BIT.png)
