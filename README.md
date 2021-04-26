@@ -353,4 +353,4 @@ For example:
 
 An example of tree from [TopCoder](https://www.topcoder.com/thrive/articles/Binary%20Indexed%20Trees).
 
-[!BIT.png](img/BIT.png)
+![BIT.png](img/BIT.png)
